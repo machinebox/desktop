@@ -7,5 +7,5 @@ clean:
 build: clean
 	go generate
 	go build -o app
-	appify app $(APP_NAME)
+	bin/appify app $(APP_NAME)
 	open -a $(APP_NAME).app

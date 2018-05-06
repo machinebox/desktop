@@ -10,4 +10,8 @@ Running `make build` will create a single application binary serving the
 ## Dependencies
 
 * https://github.com/elazarl/go-bindata-assetfs - Asset binding
-* github.com/zserge/webview - Web view
+* https://github.com/zserge/webview - Web view
+
+## Install
+
+* `go get github.com/elazarl/go-bindata-assetfs`
