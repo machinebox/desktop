@@ -13,5 +13,5 @@
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
 bindata.go
-My Go Desktop App.app/Contents/MacOS/My Go Desktop App
+My Go Desktop App.app/
 app
