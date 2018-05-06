@@ -14,7 +14,8 @@ When run, the application will open a web view into the `www` folder.
 
 ## Usage
 
-Build with: `make build`
+Build with: `make build`,
+run with: `make run`
 
 ## Dependencies
 
@@ -31,6 +32,13 @@ Use `make install` to run:
 $ go get github.com/jteeuwen/go-bindata/...
 $ go get github.com/elazarl/go-bindata-assetfs/...
 ```
+
+## Run
+
+Run with `make run`.
+
+To see log output open **Console** Application and search for `My Go Desktop App`
+(or whatever your app ends up being called).
 
 ![Preview of the default application](preview.png)
 

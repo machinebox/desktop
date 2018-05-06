@@ -1,3 +1,6 @@
 
 document.getElementById('now').innerHTML = new Date()
-window.external.invoke('Hello from the other side')
+
+setInterval(function(){
+    window.external.invoke("something")
+}, 1000)
