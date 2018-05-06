@@ -18,6 +18,7 @@ Build with: `make build`
 
 ## Dependencies
 
+* https://github.com/machinebox/appify - macOS Application Builder
 * https://github.com/zserge/webview - Web view
 * https://github.com/jteeuwen/go-bindata and https://github.com/elazarl/go-bindata-assetfs - Asset binding
 
