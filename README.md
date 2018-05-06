@@ -31,6 +31,8 @@ $ go get github.com/jteeuwen/go-bindata/...
 $ go get github.com/elazarl/go-bindata-assetfs/...
 ```
 
+![Preview of the default application](preview.png)
+
 ## Contribute?
 
 We think this project could be much bigger. Got ideas? Get in touch.
