@@ -30,3 +30,13 @@ Use `make install` to run:
 $ go get github.com/jteeuwen/go-bindata/...
 $ go get github.com/elazarl/go-bindata-assetfs/...
 ```
+
+## Contribute?
+
+We think this project could be much bigger. Got ideas? Get in touch.
+
+## What next?
+
+If you want to build other kinds of Go application, and have them built into
+macOS applications, check out our [machinebox/appify](https://github.com/machinebox/appify)
+project.
