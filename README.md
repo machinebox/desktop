@@ -10,7 +10,8 @@ inside the `www` folder, just like a normal web root.
 Building the package will generate a `.app` mac application file that will
 host a simple web server serving the assets and any other endpoints you build.
 
-When run, the application will open a web view into the `www` folder.
+When run, the application will open a web view into the `www` folder (and therefore
+the `index.html` page).
 
 ## Usage
 
