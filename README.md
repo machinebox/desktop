@@ -4,8 +4,17 @@ Go/HTML/CSS/JS Desktop application scaffold.
 
 ## How it works
 
-Running `make build` will create a single application binary serving the
-`www` folder in a web view when the application is run.
+Build your application using Go APIs, and an HTML/CSS/JavaScript front-end
+inside the `www` folder, just like a normal web root.
+
+Building the package will generate a `.app` mac application file that will
+host a simple web server serving the assets and any other endpoints you build.
+
+When run, the application will open a web view into the `www` folder.
+
+## Usage
+
+Build with: `make build`
 
 ## Dependencies
 

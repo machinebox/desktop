@@ -18,7 +18,7 @@ func main() {
 			os.Exit(2)
 		}
 	}()
-	if err := webview.Open("Machine Box", "http://0.0.0.0:8080", 1024, 768, true); err != nil {
+	if err := webview.Open("Desktop by Machine Box", "http://0.0.0.0:8080", 1024, 768, true); err != nil {
 		fmt.Fprintf(os.Stderr, "%v", err)
 		os.Exit(2)
 	}
