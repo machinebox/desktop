@@ -18,9 +18,12 @@ Build with: `make build`
 
 ## Dependencies
 
-* https://github.com/elazarl/go-bindata-assetfs - Asset binding
 * https://github.com/zserge/webview - Web view
+* https://github.com/jteeuwen/go-bindata and https://github.com/elazarl/go-bindata-assetfs - Asset binding
 
 ## Install
 
-* `go get github.com/elazarl/go-bindata-assetfs`
+```
+$ go get github.com/jteeuwen/go-bindata/...
+$ go get github.com/elazarl/go-bindata-assetfs/...
+```
