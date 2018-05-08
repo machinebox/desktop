@@ -8,7 +8,7 @@ clean:
 build: clean
 	go generate
 	go build -o app
-	appify -name=$(APP_NAME) app
+	appify -name=$(APP_NAME) -icon=icon.png app
 
 run: clean build
 	sleep 1
