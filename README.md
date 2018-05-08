@@ -2,6 +2,8 @@
 
 Go/HTML/CSS/JS Desktop application scaffold.
 
+![Default icon which you can customize](misc/icon-small.png)
+
 ## How it works
 
 Build your application using Go APIs, and an HTML/CSS/JavaScript front-end
@@ -41,7 +43,7 @@ Run with `make run`.
 To see log output open **Console** Application and search for `My Go Desktop App`
 (or whatever your app ends up being called).
 
-![Preview of the default application](preview.png)
+![Preview of the default application](misc/preview.png)
 
 ## Contribute?
 
