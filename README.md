@@ -2,7 +2,7 @@
 
 Go/HTML/CSS/JS Desktop application scaffold.
 
-![Default icon which you can customize](misc/icon-small.png)
+[![Default icon which you can customize](misc/icon-small.png)](/machinebox/desktop/blob/master/icon.png)
 
 ## How it works
 
