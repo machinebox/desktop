@@ -12,8 +12,8 @@ build: clean
 run: clean build
 	open -a $(APP_NAME).app
 
-debug: clean build
-	MB_DESKTOP_DEBUG=true open -a $(APP_NAME).app
+debug: clean
+	MB_DESKTOP_DEBUG=true go run *.go
 
 install:
 	go get github.com/machinebox/appify
