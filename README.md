@@ -20,6 +20,8 @@ the `index.html` page).
 Build with: `make build`,
 run with: `make run`
 
+* See the `Makefile` for more commands
+
 ## Dependencies
 
 * https://github.com/machinebox/appify - macOS Application Builder

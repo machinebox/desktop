@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"log"
 	"net"
 	"net/http"
 	"os"
@@ -30,13 +32,14 @@ func main() {
 // handleClientInvoke handles client-side calls to
 // window.external.invoke.
 func handleClientInvoke(w webview.WebView, data string) {
-	webview.Debug("TODO: handleClientInvoke:", w, data)
+	webview.Debug("TODO: handleClientInvoke: ", data)
 }
 
 func run() error {
 	const endpoint = "0.0.0.0:0"
 	debug := os.Getenv("MB_DESKTOP_DEBUG") == "true"
 	box := packr.NewBox("./www")
+	http.HandleFunc("/time", handleTime)
 	http.Handle("/", http.FileServer(box))
 	ln, err := net.Listen("tcp", endpoint)
 	if err != nil {
@@ -49,6 +52,7 @@ func run() error {
 		}
 	}()
 	addr := "http://" + ln.Addr().String()
+	log.Println("serving via", addr)
 	client := http.Client{Timeout: 100 * time.Millisecond}
 	for {
 		time.Sleep(100 * time.Millisecond)
@@ -66,4 +70,12 @@ func run() error {
 	win := webview.New(webviewSettings)
 	win.Run()
 	return nil
+}
+
+// handleTime handles the /time endpoint.
+// It is used to demonstrate an API call from app.js.
+func handleTime(w http.ResponseWriter, r *http.Request) {
+	if _, err := io.WriteString(w, time.Now().Format(time.RFC822)); err != nil {
+		log.Println(err)
+	}
 }
