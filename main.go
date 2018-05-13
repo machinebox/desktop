@@ -8,11 +8,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/gobuffalo/packr"
 	"github.com/pkg/errors"
 	"github.com/zserge/webview"
 )
-
-//go:generate go-bindata-assetfs www/...
 
 var webviewSettings = webview.Settings{
 	Title:                  "Desktop by Machine Box",
@@ -38,7 +37,8 @@ func handleClientInvoke(w webview.WebView, data string) {
 func run() error {
 	const endpoint = "0.0.0.0:0"
 	debug := os.Getenv("MB_DESKTOP_DEBUG") == "true"
-	http.Handle("/", http.FileServer(assetFS()))
+	box := packr.NewBox("./www")
+	http.Handle("/", http.FileServer(box))
 	ln, err := net.Listen("tcp", endpoint)
 	if err != nil {
 		return errors.Wrap(err, "net.Listen")
