@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net"
 	"net/http"
 	"os"
@@ -58,7 +57,6 @@ func run() error {
 			continue
 		}
 		resp.Body.Close()
-		log.Println(resp.StatusCode, err)
 		if resp.StatusCode == http.StatusOK {
 			break
 		}
