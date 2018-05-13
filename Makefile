@@ -3,7 +3,6 @@ APP_NAME := "My Go Desktop App"
 clean:
 	rm -rf $(APP_NAME).app || true
 	rm app || true
-	rm bindata.go || true
 
 build: clean
 	packr build -o app
